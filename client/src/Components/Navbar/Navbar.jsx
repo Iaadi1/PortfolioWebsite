@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import navbarLogo from "..//..//assets/navLogo.svg";
 import menuIcon from "..//..//assets/menu_button.svg";
 import downloadIcon from '..//..//assets/downloadIcon.svg';
-import "../Navbar/Navbar.css";
+import "../Navbar/NavbarStyles.css";
 
 const Navbar = () => {
   const navbarLinks = ["Home", "About Me", "Projects"];
