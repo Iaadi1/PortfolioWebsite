@@ -1,0 +1,74 @@
+.header-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* .header-profile-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+} */
+.header-location-tag {
+  display: flex;
+  flex-direction: row;
+}
+.intro-text {
+  color: black;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -1.2px;
+  margin: 0px;
+}
+.header-profile-para {
+  color: black;
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0px;
+}
+.header-button-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-githubLink-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 60px;
+  width: 60px;
+  flex-shrink: 0px;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: black;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.header-linkedinLink-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 60px;
+  width: 60px;
+  flex-shrink: 0px;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: #3178c6;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.header-proj-btn {
+  display: flex;
+  padding: 12px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background: var(--Color, #fff);
+  cursor: pointer;
+}

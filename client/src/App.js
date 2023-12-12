@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   return (
-    <div>
+    <div style={{overflow:"hidden"}}>
       <Navbar />
       <BodyContent />
     </div>
