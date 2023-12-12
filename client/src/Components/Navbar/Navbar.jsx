@@ -27,7 +27,7 @@ const Navbar = () => {
         </button>
       </div>
       <div className="navbar-breadMenu-btn" onClick={toggleBreadMenu}>
-        <img src={menuIcon} alt="Menu Icon" />
+        <img className="navbar-breadmenu-icon" src={menuIcon} alt="Menu Icon" />
       </div>
     </div>
   );

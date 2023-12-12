@@ -4,8 +4,15 @@ import headerAnimoji from "..//..//..//assets/headerAnimoji.svg";
 import locationIcon from "..//..//..//assets/locationIcon.svg";
 import githubIcon from "..//..//..//assets/gtihubIcon.svg";
 import linkedinIcon from "..//..//..//assets/linkedinIcon.svg";
-
+import downloadIcon from "..//..//../assets/downloadIcon.svg";
 const Header = () => {
+  const openGithub = () => {
+    window.open("https://github.com/Iaadi1", "_blank");
+  };
+  const openLinkedin= () => {
+    window.open("https://linkedin.com/in/adityadeshpande1", "_blank");
+  };
+
   return (
     <div className="header-main-container">
       <div className="header-profile-container">
@@ -27,11 +34,14 @@ const Header = () => {
           <h4 className="header-location-text">Pune, India</h4>
         </div>
         <div className="header-button-group">
-          <button className="header-githubLink-btn">
+          <button onClick={openGithub} className="header-githubLink-btn">
             <img src={githubIcon} />
           </button>
-          <button className="header-linkedinLink-btn">
+          <button onClick={openLinkedin} className="header-linkedinLink-btn">
             <img src={linkedinIcon} />
+          </button>
+          <button className="header-download-btn">
+            <img src={downloadIcon} />
           </button>
           <button className="header-proj-btn">Explore Projects</button>
         </div>
