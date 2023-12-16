@@ -2,10 +2,10 @@ import React from 'react'
 
 const Experience = () => {
   return (
-    <div>
+    <div className='exp-main-container'>
       This is Experience
     </div>
   )
 }
 
-export default Experience
+export default Experience;
