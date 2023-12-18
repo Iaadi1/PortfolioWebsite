@@ -4,13 +4,18 @@
   justify-content: center;
   margin: 20px;
 }
-
+.exp-main-title{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+}
 .exp-education-timeline {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+  /* justify-content: center; */
 }
 .exp-briefcase-img {
   display: flex;
@@ -43,7 +48,6 @@
   display: flex;
   justify-content: center;
   width: 120px;
-  /* margin-left: 8px; */
 }
 .exp-education-img-div {
   display: flex;
@@ -56,17 +60,24 @@
   border-radius: 100px;
 }
 /* Company Experience Card */
+.exp-cards-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .exp-card {
   display: flex;
   padding: 20px;
-  width: 850px;
+  width: 800px;
   flex-direction: column;
   background-color: white;
   border-radius: 10px;
   box-shadow: 5px 5px 5px gray;
   border: 0.01px solid rgb(245, 245, 245);
   margin-left: 60px;
+  margin-bottom: 150px;
 }
+
 .exp-card-upperpart {
   display: flex;
   justify-content: space-between;
@@ -135,4 +146,105 @@ hr {
   font-weight: 500;
   line-height: 20px;
   text-transform: capitalize;
+}
+@media (max-width:768px){
+  .exp-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    margin: 20px;
+  }
+  .exp-main-title{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .exp-education-timeline {
+    display: none;
+  }
+
+
+  /* Company Experience Card */
+  .exp-cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .exp-card {
+    display: flex;
+    padding: 15px;
+    width: 300px;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+  
+  .exp-card-upperpart {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .exp-cmpname-text {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 50px;
+    font-style: normal;
+    margin: 0px 0px 10px 0px;
+    color: #3178c6;
+  }
+  .exp-position-text {
+    color: #000001;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 10px 0px 10px 0px;
+  }
+  .exp-duration-text {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .ex-cmpimage {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  hr {
+    margin: 5px 0px 5px 0px;
+    color: #000;
+  }
+  .exp-skills-title {
+    color: var(--Gray-600, #4b5563);
+    margin: 5px 0px 5px 0px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .exp-skillchip-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .exp-skillchip {
+    padding: 8px 12px;
+    border-radius: 20px;
+    background-color: #077cc3;
+    font-size: 14px;
+    margin: 6px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .exp-skills-text {
+    margin: 0px;
+    color: var(--Color, #fff);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: capitalize;
+  }
 }

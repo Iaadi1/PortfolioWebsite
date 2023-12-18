@@ -4,7 +4,7 @@ import briefcaseIcon from "..//..//..//assets/iconBriefcase.svg";
 import educationIcon from "..//..//..//assets/iconEducation.svg";
 import rectangleIcon from "..//..//..//assets/Rectangle.svg";
 import infosysImage from "..//..//..//assets/InfosysImage.png";
-import SgbauImage from '..//..//..//assets/SGBAU.jpeg';
+import SgbauImage from "..//..//..//assets/SGBAU.jpeg";
 const Experience = () => {
   const skillTags = [
     "ReactJs",
@@ -16,12 +16,11 @@ const Experience = () => {
     "UI Developement",
     "RWD",
     "Jira",
-    
   ];
 
   return (
     <div className="exp-main-container">
-      <h2>Experience</h2>
+      <h2 className="exp-main-title">Experience</h2>
       <div className="exp-content-container">
         <div className="exp-education-timeline">
           <div className="exp-briefcase-img-div">
@@ -56,17 +55,21 @@ const Experience = () => {
             <div>
               <p className="exp-skills-title">Skills Which I use Here</p>
               <div className="exp-skillchip-container">
-                {skillTags.map((tags)=>(<div className="exp-skillchip">
-                  <p className="exp-skills-text">{tags}</p>
-                </div>))}
+                {skillTags.map((tags) => (
+                  <div className="exp-skillchip">
+                    <p className="exp-skills-text">{tags}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-          <div className="exp-card">
+          <div className="exp-card edu">
             <div className="exp-card-upperpart">
               <div className="exp-upperpart-text">
                 <p className="exp-cmpname-text">Amravati University</p>
-                <p className="exp-position-text">Bachelor of Engineering (BE)</p>
+                <p className="exp-position-text">
+                  Bachelor of Engineering (BE)
+                </p>
                 <p className="exp-duration-text">2015 -2019</p>
               </div>
               <div>
@@ -81,8 +84,9 @@ const Experience = () => {
               <hr></hr>
             </div>
             <div>
-              <p className="exp-edu-title">Specialization : Mechanical Engineering</p>
-              
+              <p className="exp-edu-title">
+                Specialization : Mechanical Engineering
+              </p>
             </div>
           </div>
         </div>
